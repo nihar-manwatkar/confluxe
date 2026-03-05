@@ -1,0 +1,20 @@
+---
+description: Confluxe deployment and staging setup
+alwaysApply: true
+---
+
+# Confluxe Deployment Context
+
+## Hosting
+- **Platform:** Vercel
+- **Production:** www.confluxe.in (main branch)
+- **Staging:** staging.confluxe.in (preview branch)
+- **DNS:** GoDaddy (confluxe.in)
+
+## Git Workflow
+- **main** → deploys to www.confluxe.in
+- **preview** → deploys to staging.confluxe.in (client approval before production)
+
+## Scripts
+- `scripts/push-to-github.ps1` - Pushes main and preview branches to GitHub
+- See `SETUP-GITHUB.md` for one-time GitHub repo setup
