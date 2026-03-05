@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SF Pro Display – loaded from public/fonts/ (your .otf files) */
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/SF-Pro-Display-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/SF-Pro-Display-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/SF-Pro-Display-Bold.otf") format("opentype");
+}
+
+:root {
+  --cream: #FCF9F3;
+  --dark: #1C1C1C;
+  --footer: #36302B;
+  --terracotta-dark: #36281C;  /* Join Team overlay */
+  --indian-earth: #361E1C;    /* Footer background – Figma 5:172 Indian Earth */
+  --accent: #FF3D22;
+  /* Figma MCP – Section 3 "3 - What we are" design tokens */
+  --black-ink: #1C1C1C;
+  --confluxe-red: #FF3D22;
+  --muslin: #FCFDF3;
+  --digital-mist: #9FC9CB; /* Numbers 01–04 */
+  --teal-accent: #9FC9CB;  /* Alias for Digital Mist */
+  --separator: #FFFFFF;
+  --terracotta: #733534;   /* Section 5 – Testimonial (5:173) */
+  /* SF Pro: loaded from public/fonts/ + system fallback */
+  --font-sf-pro: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--dark);
+}
