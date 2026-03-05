@@ -196,13 +196,13 @@ export default function Hero() {
       {/* Content container - Figma: 1320px max, 60px padding; mobile: 30px padding */}
       <div className="relative z-10 mx-auto flex min-h-[900px] w-full max-w-[1320px] flex-col px-6 md:px-[60px]">
         {/* Header: Icon (left) + CONFLUXE (center) + Primary Navigation (right) - Figma: y=59; mobile: y=30 */}
-        <header className="relative flex min-h-[90px] w-full items-center justify-between pt-[30px] md:min-h-[231px] md:pt-[59px]">
+        <header className="relative flex min-h-[90px] w-full items-start justify-between pt-[30px] md:min-h-[231px] md:pt-[59px]">
           {/* Mobile: 3-column flex - logo | CONFLUXE | burger - all aligned on same line */}
-          <div className="flex w-full items-center justify-between md:contents">
+          <div className="flex w-full items-start justify-between md:contents">
             {/* Left: Logo */}
             <Link
               href="/"
-              className="relative z-10 flex shrink-0 items-center justify-center md:justify-start"
+              className="relative z-10 flex shrink-0 items-start justify-center md:justify-start"
               aria-label="Confluxe home"
             >
               <Image
@@ -217,7 +217,7 @@ export default function Hero() {
             {/* Center: CONFLUXE - in flex flow for proper alignment with logo & burger */}
             <Link
               href="/"
-              className="relative z-10 flex shrink-0 items-center justify-center text-[18px] font-medium leading-none tracking-[-0.18px] text-[#FCF9F3] md:hidden"
+              className="relative z-10 flex shrink-0 items-start justify-center text-[18px] font-medium leading-none tracking-[-0.18px] text-[#FCF9F3] md:hidden"
               style={{ fontFamily: "var(--font-sf-pro), system-ui, sans-serif" }}
             >
               CONFLUXE
@@ -225,7 +225,7 @@ export default function Hero() {
             {/* Right: Mobile hamburger */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="relative z-10 flex shrink-0 items-center justify-center p-2 md:hidden"
+              className="relative z-10 flex shrink-0 items-start justify-center p-2 md:hidden"
               aria-label="Toggle menu"
               aria-expanded={mobileMenuOpen}
             >
@@ -256,7 +256,7 @@ export default function Hero() {
           {/* Desktop: CONFLUXE centered */}
           <Link
             href="/"
-            className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 text-[24px] font-medium tracking-[-0.24px] text-[#FCF9F3] md:block"
+            className="absolute left-1/2 top-[30px] hidden -translate-x-1/2 text-[24px] font-medium tracking-[-0.24px] text-[#FCF9F3] md:block md:top-[59px]"
             style={{ fontFamily: "var(--font-sf-pro), system-ui, sans-serif" }}
           >
             CONFLUXE
