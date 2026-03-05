@@ -18,3 +18,5 @@ alwaysApply: true
 ## Scripts
 - `scripts/push-to-github.ps1` - Pushes main and preview branches to GitHub
 - See `SETUP-GITHUB.md` for one-time GitHub repo setup
+
+Last staging sync: 2026-03-05
