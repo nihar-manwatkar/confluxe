@@ -12,8 +12,9 @@ alwaysApply: true
 - **DNS:** GoDaddy (confluxe.in)
 
 ## Git Workflow
-- **main** → deploys to www.confluxe.in
+- **main** → deploys to www.confluxe.in (production)
 - **preview** → deploys to staging.confluxe.in (client approval before production)
+- **IMPORTANT:** Never merge preview → main unless user explicitly approves. Production updates only after client sign-off.
 
 ## Scripts
 - `scripts/push-to-github.ps1` - Pushes main and preview branches to GitHub
