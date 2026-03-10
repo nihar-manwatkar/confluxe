@@ -4,7 +4,7 @@ import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 
-// Design: Muslin #FCF9F3, Black Ink #1C1C1C, Confluxe Red #FF3D22, Indian Earth #36302B
+// Design: Muslin #FCF9F3, Black Ink #1C1C1C, Confluxe Red #FF3D22, dark boxes: terracotta-dark #36281C
 
 // Incremental counter: animates from 0 to target when in view (quick)
 function useCountUp(end: number, suffix: string, durationMs = 1200, inView: boolean) {
@@ -70,7 +70,7 @@ const blocks = [
     metricDescriptor: "influenced by digital touchpoints.",
     description:
       "Online discovery now shapes purchase intent, even when the transaction is offline.",
-    bgColor: "bg-[#36302B]",
+    bgColor: "bg-[var(--indian-earth)]",
     textColor: "text-[#FCF9F3]",
     width: 360,
     height: 360,
@@ -84,12 +84,12 @@ const blocks = [
     metricSuffix: "M+",
     statement:
       "Demand is expanding beyond metros into distinct city clusters and new formats including social and quick commerce.",
-    bgColor: "bg-[#36302B]",
+    bgColor: "bg-[#733634]",
     textColor: "text-[#FCF9F3]",
     width: 360,
     height: 360,
     x: 1020,
-    y: 206,
+    y: 266,
   },
 ];
 
@@ -256,7 +256,7 @@ export default function ConsumerInsights() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.45, delay: i * 0.08 }}
-              className={`absolute hidden flex-col md:flex ${block.bgColor} ${block.textColor}`}
+              className={`absolute hidden flex-col md:flex [background-clip:unset] [-webkit-background-clip:unset] ${block.bgColor} ${block.textColor}`}
               style={{
                 left: block.x - 60,
                 top: block.y,

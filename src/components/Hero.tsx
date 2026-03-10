@@ -6,15 +6,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 const HERO_BG_COUNT = 5;
-const TRANSITION_INTERVAL_MS = 5000;   // Time each slide stays visible
-const TRANSITION_DURATION_MS = 2800;   // Crossfade – slower, smoother
+const TRANSITION_INTERVAL_MS = 6500;   // Time each slide stays visible (30% slower)
+const TRANSITION_DURATION_MS = 3640;   // Crossfade – 30% slower
 
 // Grid reveal (disenopublico-style): center-radiating stagger
 const GRID_COLS = 14;
 const GRID_ROWS = 10;
 const GRID_COUNT = GRID_COLS * GRID_ROWS;
-const REVEAL_DURATION = 0.55;   // Per-block animation
-const REVEAL_STAGGER = 0.048;   // Delay per distance unit from center
+const REVEAL_DURATION = 0.715;   // Per-block animation (30% slower)
+const REVEAL_STAGGER = 0.0624;   // Delay per distance unit from center (30% slower)
 const REVEAL_SCALE_END = 0.35;  // Scale down to this before fade
 
 // Stagger delays from center – center cells reveal first, edges last
@@ -326,7 +326,7 @@ export default function Hero() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.78 }}
             className="font-normal"
             style={{
               color: "var(--muslin, #FCFDF3)",
@@ -345,7 +345,7 @@ export default function Hero() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
+            transition={{ delay: 0.26, duration: 0.78 }}
             className="mt-[116px] max-w-full text-[22px] font-normal leading-[1.5] tracking-[-0.2px] text-[#FCF9F3] md:max-w-[563px] md:text-[18px] md:leading-[1.36] md:tracking-[-0.22px] lg:text-[22px]"
             style={{ fontFamily: "var(--font-noticia), Georgia, serif" }}
           >

@@ -82,20 +82,20 @@ export default function Testimonial({
             }`}
           >
             <div className="relative">
-              {/* Background Container – 195×195 behind bottom-right of image (Figma: offset 124px, 108px) */}
+              {/* Background Container – 195×195 behind bottom-right of image (Figma: offset 124px, 108px); mobile ~40% larger */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.92 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.5, delay: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
-                className="absolute z-0 left-[47px] top-[41px] w-[63px] h-[63px] md:left-[80px] md:top-[70px] md:w-[195px] md:h-[195px] lg:left-[124px] lg:top-[108px]"
+                className="absolute z-0 left-[66px] top-[57px] w-[88px] h-[88px] md:left-[80px] md:top-[70px] md:w-[195px] md:h-[195px] lg:left-[124px] lg:top-[108px]"
                 style={{
                   backgroundColor: "var(--terracotta)",
                   transformOrigin: "center center",
                 }}
               />
-              {/* Profile content – image + name/role, 41px gap (Figma itemSpacing) */}
-              <div className="relative z-10 flex flex-col w-[125px] md:w-[195px] lg:w-[303px]">
-                <div className="relative w-[114px] h-[114px] overflow-hidden shrink-0 md:w-[195px] md:h-[195px] lg:w-[303px] lg:h-[303px]">
+              {/* Profile content – image + name/role, 41px gap (Figma itemSpacing); mobile ~40% larger */}
+              <div className="relative z-10 flex flex-col w-[175px] md:w-[195px] lg:w-[303px]">
+                <div className="relative w-[160px] h-[160px] overflow-hidden shrink-0 md:w-[195px] md:h-[195px] lg:w-[303px] lg:h-[303px]">
                   {!imageError ? (
                     <Image
                       src={imageSrc}

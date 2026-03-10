@@ -15,15 +15,6 @@ export default function PixelClusterSection() {
     <section
       className="relative flex w-[209px] h-[110px] min-h-[146px] px-0 py-0 bg-[var(--cream)] overflow-visible md:min-h-[300px] justify-center items-start"
     >
-      {/* Subtle vertical lines – left and right edges */}
-      <div
-        className="absolute left-0 top-0 bottom-0 w-px"
-        style={{ backgroundColor: "var(--confluxe-red)", opacity: 0.15 }}
-      />
-      <div
-        className="absolute right-0 top-0 bottom-0 w-px"
-        style={{ backgroundColor: "var(--confluxe-red)", opacity: 0.15 }}
-      />
       <div
         className="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-0 z-0 w-[420px] h-[300px] origin-bottom scale-[0.486] md:left-0 md:translate-x-0 md:scale-100"
         aria-hidden
