@@ -135,7 +135,7 @@ export default function ConsumerInsights() {
             className="max-w-full text-[22px] font-normal leading-[1.3] tracking-[-0.22px] text-[#1C1C1C] md:max-w-[594px] md:text-[36px] md:leading-[1.19] md:tracking-[-0.36px]"
             style={{ fontFamily: "var(--font-sf-pro), system-ui, sans-serif" }}
           >
-            The hard-hitting data behind the world&apos;s most significant retail frontier.
+            The structural forces shaping India&apos;s fashion and lifestyle market.
           </p>
         </div>
 

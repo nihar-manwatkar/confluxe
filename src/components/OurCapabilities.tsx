@@ -45,7 +45,7 @@ export default function OurCapabilities() {
             className="text-[20px] font-medium max-w-full leading-[1.3] tracking-[-0.2px] md:text-[36px] md:w-[580px] md:leading-[1.19] md:tracking-[-0.36px] shrink-0"
             style={{ fontFamily: "var(--font-sf-pro), system-ui, sans-serif", color: "var(--black-ink)" }}
           >
-            Technology is the operating layer across every brand and every channel.
+            Technology, data and AI form the infrastructure behind the Confluxe ecosystem.
           </p>
         </div>
 

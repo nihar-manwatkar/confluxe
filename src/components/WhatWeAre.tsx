@@ -25,9 +25,9 @@ const TOP_LEFT_PIXELS = TOP_RIGHT_PIXELS.map(({ right, top, w, h, opacity }) => 
 
 // Figma Talking Points – Frame 21–24: itemSpacing 106, column widths per auto layout
 const items = [
-  { num: "01", title: "Licensed operating control.", maxWidth: 202 },
+  { num: "01", title: "Licensed brand operations governance.", maxWidth: 202 },
   { num: "02", title: "Disciplined execution under brand stewardship.", maxWidth: 291 },
-  { num: "03", title: "Technology and data embedded in daily operations.", maxWidth: 251 }, // 251px forces 3-line wrap
+  { num: "03", title: "Operations powered by tech and data.", maxWidth: 251 },
   { num: "04", title: "Growth designed for longevity, not speed alone.", maxWidth: 268 },
 ];
 

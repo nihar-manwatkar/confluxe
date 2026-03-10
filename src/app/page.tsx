@@ -42,7 +42,7 @@ export default function Home() {
         </ScrollReveal>
         <ScrollReveal>
           <Testimonial
-            quote="Infrastructure and intimacy are not mutually exclusive. The strongest brands are those built on a backbone of technical precision and cultural soul."
+            quote="Great brands emerge where culture, technology, and discipline come together. Our role is to help them scale without losing what makes them distinctive."
             name="Louis Coucke"
             role="COO & Co-Founder"
             imageSrc="/images/louis-profile.png"

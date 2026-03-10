@@ -65,7 +65,7 @@ export default function JoinTeam({ className = "" }: { className?: string }) {
 
         {/* CTA */}
         <a
-          href="#careers"
+          href="mailto:curious@confluxe.in"
           className="inline-flex items-center gap-[9px] text-[16px] font-medium tracking-[-0.16px] hover:opacity-90 transition-opacity shrink-0 md:text-[18px] md:tracking-[-0.18px]"
           style={{
             fontFamily: "var(--font-sf-pro), system-ui, sans-serif",

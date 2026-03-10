@@ -111,10 +111,10 @@ export default function Footer() {
             </Link>
           </nav>
           <div className="flex items-center gap-[37px] shrink-0 ml-auto opacity-40">
-              <a href="https://instagram.com/confluxe" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="Instagram">
+              <a href="https://www.instagram.com/confluxe.in/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="Instagram">
                 <Image src="/images/icons/instagram.svg" alt="Instagram" width={20} height={20} unoptimized />
               </a>
-              <a href="https://linkedin.com/company/confluxe" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/confluxe/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="LinkedIn">
                 <Image src="/images/icons/linkedin.svg" alt="LinkedIn" width={21} height={20} unoptimized />
               </a>
             </div>
