@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   title: "Confluxe | Digital Omnichannel Bridge to India",
   description: "We are building a digital omnichannel bridge to India. Technology woven with soul.",
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
+    icon: "/Favicon.png",
+    shortcut: "/Favicon.png",
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
