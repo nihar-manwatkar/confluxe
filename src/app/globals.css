@@ -54,3 +54,10 @@ body {
   background-color: var(--cream);
   color: var(--dark);
 }
+
+/* 80% box: nudge right at 1440–1680px so India marker on map stays visible */
+@media (min-width: 1440px) and (max-width: 1680px) {
+  .consumer-insights-80-box {
+    left: 680px !important;
+  }
+}

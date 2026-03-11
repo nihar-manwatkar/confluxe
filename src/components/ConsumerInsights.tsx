@@ -256,7 +256,7 @@ export default function ConsumerInsights() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.45, delay: i * 0.08 }}
-              className={`absolute hidden flex-col md:flex [background-clip:unset] [-webkit-background-clip:unset] ${block.bgColor} ${block.textColor}`}
+              className={`absolute hidden flex-col md:flex [background-clip:unset] [-webkit-background-clip:unset] ${block.bgColor} ${block.textColor} ${block.id === "2" ? "consumer-insights-80-box" : ""}`}
               style={{
                 left: block.x - 60,
                 top: block.y,

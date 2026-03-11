@@ -102,7 +102,7 @@ export default function WhatWeAre() {
         </motion.div>
 
         {/* Talking Points – Figma Group 80: mobile stacked with separators; desktop grid */}
-        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[5fr_6fr_6fr_5fr] lg:items-start">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[5fr_6fr_6fr_5fr] lg:items-stretch">
           {items.map((item, i) => (
             <motion.div
               key={item.num}
