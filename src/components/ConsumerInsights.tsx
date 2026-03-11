@@ -104,9 +104,9 @@ export default function ConsumerInsights() {
       ref={sectionRef}
       className="relative overflow-hidden bg-[#FCF9F3] px-6 pb-16 pt-12 md:px-[60px] md:pb-24 md:pt-20"
     >
-      {/* World map background - bottom-left corner per design (Figma: 1011×570, ~45% opacity); scaled on mobile */}
+      {/* World map background - bottom-left corner per design (Figma: 1011×570, ~45% opacity); at 1440–1680px shifted left so India marker stays visible */}
       <div
-        className="pointer-events-none absolute bottom-0 left-0 z-0 h-[335px] w-[594px] opacity-[0.45] md:h-[570px] md:w-[1011px]"
+        className="pointer-events-none absolute bottom-0 left-0 z-0 h-[335px] w-[594px] opacity-[0.45] md:h-[570px] md:w-[1011px] consumer-insights-map"
         aria-hidden
       >
         <Image
@@ -256,7 +256,7 @@ export default function ConsumerInsights() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.45, delay: i * 0.08 }}
-              className={`absolute hidden flex-col md:flex [background-clip:unset] [-webkit-background-clip:unset] ${block.bgColor} ${block.textColor} ${block.id === "2" ? "consumer-insights-80-box" : ""}`}
+              className={`absolute hidden flex-col md:flex [background-clip:unset] [-webkit-background-clip:unset] ${block.bgColor} ${block.textColor}`}
               style={{
                 left: block.x - 60,
                 top: block.y,
